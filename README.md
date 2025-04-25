@@ -2,8 +2,6 @@
 Slowly but surely building up my skills and sharing them here! 
 # ceilidemo.github.io 
 
-Trigger deployment build
-
 Adapted from the Jekyll Chirpy template. 
 
 This work is published under [MIT][mit] License.
