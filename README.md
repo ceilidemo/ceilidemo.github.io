@@ -1,6 +1,6 @@
 # Personal website for moi (Ceili DeMarais) 
 Slowly but surely building up my skills and sharing them here! 
-# ceilidemo.github.io 
+👉 [ceilidemo.github.io](https://ceilidemo.github.io)
 
 Adapted from the Jekyll Chirpy template. 
 
