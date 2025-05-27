@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: page
 icon: fas fa-leaf
 order: 2
 title: Research
