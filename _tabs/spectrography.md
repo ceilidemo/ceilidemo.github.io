@@ -16,10 +16,3 @@ This page is also a nod to the *Bavarian Pigeon Corps*, an awesome piece of remo
 So here is my modern day version of the Bavarian Pigeon Corps: a grad student running around outside with her fieldspec and camera! 
 
 
-
-## Gallery
-
-<div class="gallery-grid">
-  <img src="/assets/lib/images/biopic.png" alt="...">
-  <!-- Add more images as desired -->
-</div>
