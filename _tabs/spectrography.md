@@ -20,8 +20,6 @@ So here is my modern day version of the Bavarian Pigeon Corps: a grad student ru
 ## Gallery
 
 <div class="gallery-grid">
-  <img src="/assets/images/sample1.jpg" alt="Spectrography photo 1">
-  <img src="/assets/images/sample2.jpg" alt="Spectrography photo 2">
-  <img src="/assets/images/sample3.jpg" alt="Spectrography photo 3">
+  <img src="/assets/images/spectrography/sample1.jpg" alt="...">
   <!-- Add more images as desired -->
 </div>
