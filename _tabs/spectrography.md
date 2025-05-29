@@ -20,6 +20,6 @@ So here is my modern day version of the Bavarian Pigeon Corps: a grad student ru
 ## Gallery
 
 <div class="gallery-grid">
-  <img src="/assets/images/spectrography/sample1.jpg" alt="...">
+  <img src="/assets/lib/images/favicon.jpg" alt="...">
   <!-- Add more images as desired -->
 </div>
