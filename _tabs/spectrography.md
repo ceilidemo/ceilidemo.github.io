@@ -15,6 +15,8 @@ So here is my modern day version of the Bavarian Pigeon Corps: a grad student ru
 
 ## "Spectrography" Gallery
 
+<link rel="stylesheet" href="{{ '/assets/lib/css/custom.css' | relative_url }}">
+
 <div class="gallery-grid">
   <img src="/assets/lib/images/spectrography/flicker.JPG" alt="Northern Flicker">
   <img src="/assets/lib/images/spectrography/mountainchickadee.jpg" alt="Mountain chickadee">
