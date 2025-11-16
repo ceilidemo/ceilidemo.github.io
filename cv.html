@@ -8,8 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="assets/js/md_HTML.js"></script>
-
 </head>
 <body>
 
@@ -31,29 +29,21 @@
   <!-- tutle -->
   <h1 class="page-title"> CV </h1>
   
-  <!-- download button for cv -->
-  <button id="download-pdf">Download CV as PDF</button>  <div style="margin-bottom: 20px;">
-    <a href="assets/attatchments/cv/CV.pdf" download class="download-btn">Download CV as PDF</a>
+  <div style="width: 100%; max-width: 900px; height: 700px; margin: 0 auto; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <iframe 
+      src="assets/attatchments/cv/cv.pdf" 
+      style="width:100%; height:100%;" 
+      frameborder="0">
+    </iframe>
   </div>
 
-  <!-- cpntent -->
- <div id="cv-content" class="page-content">
-    <p>CV loading...</p>
+  <!-- donwlOAD -->
+  <div style="text-align: center; margin: 20px 0;">
+    <a href="assets/attatchments/cv/cv.pdf" download class="download-btn" 
+       style="padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px;">
+      Download CV as PDF
+    </a>
   </div>
-  
-
-  <script>
-    // get the md on page whoop 
-    fetch('assets/attatchments/cv/cv.md')
-      .then(response => response.text())
-      .then(text => {
-        document.getElementById('cv-content').innerHTML = marked.parse(text);
-      })
-      .catch(err => {
-        document.getElementById('cv-content').innerHTML = '<p>FAILURE YOU ARE.</p>';
-        console.error(err);
-      });
-  </script>
 
 </body>
 </html>
