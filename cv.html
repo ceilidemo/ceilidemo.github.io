@@ -7,6 +7,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/md_HTML.js"></script>
 </head>
 <body>
 
@@ -31,6 +33,18 @@
   <div class="page-content">
     <p>My CV will go here... eventually...</p>
   </div>
+
+  <script>
+    fetch('assets/attatchments/cv/cv.md')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('cv-content').innerHTML = marked(text);
+      })
+      .catch(err => {
+        document.getElementById('cv-content').innerHTML = '<p>FAILURE YOU ARE.</p>';
+        console.error(err);
+      });
+  </script>
 
 </body>
 </html>
