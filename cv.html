@@ -35,6 +35,31 @@
   </div>
 
   <script>
+  console.log("JS is running!");
+
+  fetch('assets/attatchments/cv/cv.md')
+    .then(response => {
+      console.log("FETCHED:", response);
+      return response.text();
+    })
+    .then(text => {
+      console.log("TEXT:", text);
+
+      if (window.marked) {
+        document.getElementById('cv-content').innerHTML = marked.parse(text);
+      } else {
+        console.error("Marked NOT loaded!");
+        document.getElementById('cv-content').innerHTML = "<p>Marked failed to load.</p>";
+      }
+    })
+    .catch(err => {
+      console.error("ERROR:", err);
+      document.getElementById('cv-content').innerHTML = "<p>FAILURE YOU ARE.</p>";
+    });
+</script>
+
+
+  <script>
     fetch('assets/attatchments/cv/cv.md')
       .then(response => response.text())
       .then(text => {
