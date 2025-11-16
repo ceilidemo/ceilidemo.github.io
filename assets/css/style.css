@@ -1,28 +1,50 @@
-.page-navbar {
+/* NAVIGATION : oh boi */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
   position: absolute;
   top: 20px;
-  left: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
-.page-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.page-buttons a {
-  font-family: 'Amatic SC', cursive;  
+/* Landing page button */
+.nav-left .home-btn {
+  font-family: 'Amatic SC', cursive;
   font-weight: bold;
   text-decoration: none;
-  background-color: #000;
-  color: #fff;
   padding: 10px 20px;
   border-radius: 8px;
-  transition: background 0.3s, color 0.3s;
+  background-color: #000;
+  color: #fff;
+  transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
-.page-buttons a:hover {
+.nav-left .home-btn:hover {
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
 }
 
+/* ALL other pages separate */
+.nav-right a {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+  margin-left: 15px;
+}
+
+.nav-right a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
