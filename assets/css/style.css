@@ -1,0 +1,28 @@
+.page-navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.page-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.page-buttons a {
+  font-family: 'Amatic SC', cursive;  
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.page-buttons a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
