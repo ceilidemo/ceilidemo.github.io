@@ -30,19 +30,15 @@
   <!-- tutle -->
   <h1 class="page-title"> CV </h1>
   <!-- cpntent -->
-  <div class="page-content">
-    <p>My CV will go here... eventually...</p>
-  </div>
-
-  <div id="cv-content" class="page-content">
-    <p>CV comminnggggg...</p>
+ <div id="cv-content" class="page-content">
+    <p>CV loading...</p>
   </div>
 
   <script>
     fetch('assets/attatchments/cv/cv.md')
       .then(response => response.text())
       .then(text => {
-        document.getElementById('cv-content').innerHTML = marked(text);
+        document.getElementById('cv-content').innerHTML = marked.parse(text);
       })
       .catch(err => {
         document.getElementById('cv-content').innerHTML = '<p>FAILURE YOU ARE.</p>';
