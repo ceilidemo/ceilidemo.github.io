@@ -47,19 +47,20 @@
   border: 1px solid #000;
 }
 
-/* Ok lettuce try having a content container... here  */
-body {
-  font-family: 'Lora', serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #000;
+/* jk no container... a container is like that thing on landing page... got it */
+.page-title {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 120px;
+  margin-bottom: 1rem;
 }
 
-.container {
-  padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  margin-top: 100px;
+.page-content {
+  font-family: 'Lora', serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+  color: #000;
 }
