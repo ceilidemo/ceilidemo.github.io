@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script src="assets/js/md_HTML.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </head>
 <body>
 
@@ -33,12 +35,33 @@
  <div id="cv-content" class="page-content">
     <p>CV loading...</p>
   </div>
+  
+  <!-- download button for cv -->
+  <button id="download-pdf">Download CV as PDF</button>
 
   <script>
+    // load and render md...
     fetch('assets/attatchments/cv/cv.md')
       .then(response => response.text())
       .then(text => {
         document.getElementById('cv-content').innerHTML = marked.parse(text);
+
+        // pdf download
+        document.getElementById('download-pdf').addEventListener('click', () => {
+          const { jsPDF } = window.jspdf;
+          const doc = new jsPDF();
+
+          // txt from md
+          const content = document.getElementById('cv-content').innerText;
+
+          // fit pdf
+          const lines = doc.splitTextToSize(content, 180);
+          doc.text(lines, 10, 10);
+
+          // save it
+          doc.save('CV.pdf');
+        });
+
       })
       .catch(err => {
         document.getElementById('cv-content').innerHTML = '<p>FAILURE YOU ARE.</p>';
