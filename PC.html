@@ -49,28 +49,31 @@
       <h2>Field Notes</h2>
       <p>
         "Field Notes" started when I was out in the field with a fellow grad student, along with my camera. 
+        
         I started asking some questions, and put together a little video to get the word out.
         From there, I have had the chance to interview other amazing early career scientists and make these little, approachable videos.
+        
         It’s part science, part fun, and all about shining a light on important science! 
+        
         Just a pigeon with a camera, really. (See bavarian pigeon corps for more context)
       </p>
     </section>
 
     <!-- instagram section -->
     <section>
-      <h2>Field Notes on Instagram</h2>
       <p>
         You can scroll through some of the latest Field Notes videos from instagram here.
       </p>
       <div class="instagram-window">
-        <iframe src="https://www.instagram.com/reel/DPJdgMSjjSE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        <iframe src="https://www.instagram.com/reel/DOV7LwoDqv-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        <iframe src="https://www.instagram.com/reel/DNgazR9SP7G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        <iframe src="https://www.instagram.com/reel/DM-k9ABO5kV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        <iframe src="https://www.instagram.com/reel/DMLSclou0pa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        <iframe src="https://www.instagram.com/reel/DL44vb4uYHC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        <iframe src="https://www.instagram.com/reel/DLqRSK2Pt6s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPJdgMSjjSE/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOV7LwoDqv-/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNgazR9SP7G/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DM-k9ABO5kV/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMLSclou0pa/" data-instgrm-version="14"></blockquote>
       </div>
+
+      <!-- Instagram script -->
+      <script async src="https://www.instagram.com/embed.js"></script>
     </section>
 
     <!-- bulletin board -->
@@ -100,8 +103,8 @@
     document.addEventListener('DOMContentLoaded', () => {
       const pins = document.querySelectorAll('.pin');
       pins.forEach(pin => {
-        const rand = Math.random(); // 0 to 1
-        pin.style.setProperty('--rand', rand);
+        const rand = (Math.random() - 0.5) * 20; 
+        pin.style.setProperty('--rand-deg', `${rand}deg`);
       });
     });
   </script>
