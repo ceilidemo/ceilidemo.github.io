@@ -132,8 +132,8 @@
 }
 
 .social-footer-fixed a img {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   display: block;
   transition: transform 0.3s, filter 0.3s;
 }
