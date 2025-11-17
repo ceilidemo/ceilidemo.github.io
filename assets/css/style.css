@@ -1,10 +1,14 @@
-body {
-  font-family: 'Lora', serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #000;
+body.other {
   text-align: left;
+}
+
+body.other .container {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+  
+body.other p {
+  margin: 0 0 1rem 0; 
 }
 
 /* moving landing page css over here */
