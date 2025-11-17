@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectrography</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- buttons... -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="home-btn">Home</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="PC.html">PC</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- tutle -->
+  <h1 class="page-title">PC: Pigeon Camera</h1>
+
+  <!-- cpntent -->
+  <div class="page-content">
+    
+    <!-- what is this -->
+    <section>
+        <p>
+            Did you know remote sensing started with pigeons? Long before drones or satellites, the Bavarian Pigeon Corps carried tiny cameras to take aerial photos. Thus, I am a descendant of pigeons!  
+        </p>
+        <p>
+            By day, I use light to study plants (spectroscopy w/ an ecological context). 
+            By night, I’m usually behind a camera capturing friends, family, scientists, and sometimes birds (who isn't a birder these days). 
+            Basically… I’m just a pigeon with a camera.
+        </p>
+</section>
+    </section>
+
+    <!-- field notes explainer -->
+    <section>
+      <h2>Field Notes</h2>
+      <p>
+        "Field Notes" started when I was out in the field with a fellow grad student, along with my camera. 
+        I started asking some questions, and put together a little video to get the word out.
+        From there, I have had the chance to interview other amazing early career scientists and make these little, approachable videos.
+        It’s part science, part fun, and all about shining a light on important science! 
+        Just a pigeon with a camera, really. (See bavarian pigeon corps for more context)
+      </p>
+    </section>
+
+    <!-- instagram section -->
+    <section>
+      <h2>Field Notes on Instagram</h2>
+      <p>
+        You can scroll through some of the latest Field Notes videos from instagram here.
+      </p>
+      <div class="instagram-window">
+        <iframe src="https://www.instagram.com/reel/DPJdgMSjjSE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/reel/DOV7LwoDqv-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/reel/DNgazR9SP7G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/reel/DM-k9ABO5kV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/reel/DMLSclou0pa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/reel/DL44vb4uYHC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/reel/DLqRSK2Pt6s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+      </div>
+    </section>
+
+    <!-- bulletin board -->
+    <section>
+      <h2>Recent Photos & Work</h2>
+      <p>
+        Some other 
+        Each one is like a tiny pin of what’s been happening recently—labs, fieldwork, or just things that caught my eye.
+      </p>
+      <div class="bulletin-board">
+        <div class="pin"><img src="assets/attatchments/PC/will_field.jpg" alt="Will doing field work!"></div>
+        <div class="pin"><img src="assets/attatchments/PC/hannah_tent.JPG" alt="Field Camp"></div>
+        <div class="pin"><img src="assets/attatchments/PC/kyla.JPG" alt="Kyla Dahlin at MLBS"></div>
+        <div class="pin"><img src="assets/attatchments/PC/emma_smiles.jpg" alt="Emma!"></div>
+        <div class="pin"><img src="assets/attatchments/PC/jared_crouch.jpg" alt="Jared doin his thing"></div>
+        <div class="pin"><img src="assets/attatchments/PC/flicker.JPG" alt="Northern flicker"></div>
+        <div class="pin"><img src="assets/attatchments/PC/kristen_field.jpg" alt="Kristen in the field"></div>
+        <div class="pin"><img src="assets/attatchments/PC/undergrads.jpg" alt="Undergrads"></div>
+        <div class="pin"><img src="assets/attatchments/PC/MLBS.jpg" alt="MLBS NEON"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- js for rotating the pins...? idk if i want this yet -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const pins = document.querySelectorAll('.pin');
+      pins.forEach(pin => {
+        const rand = Math.random(); // 0 to 1
+        pin.style.setProperty('--rand', rand);
+      });
+    });
+  </script>
+
+</body>
+</html>
