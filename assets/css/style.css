@@ -1,25 +1,52 @@
-body.other {
-  text-align: left;
+/* basICS */
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
 }
 
-body.other .container {
-  max-width: 800px;
-  margin: 2rem auto;
-}
-  
-body.other p {
-  margin: 0 0 1rem 0; 
-}
-
-/* moving landing page css over here */
+/* take me home */
 body.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  text-align: center;
 }
 
+body.home p {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+body.home .container {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ust not home */
+body.other {
+  display: block;          
+  text-align: left;
+}
+
+body.other p {
+  margin: 0 0 1rem 0; 
+  max-width: none;
+}
+
+body.other .page-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* good head */
 h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 4rem;
@@ -30,20 +57,12 @@ h1 {
 h2 {
   font-family: 'Lora', serif;
   font-size: 1.5rem;
-  margin: 0.2em 0;
   font-weight: 400;
+  margin: 0.2em 0;
   color: #000;
 }
 
-p {
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  max-width: 600px;
-  line-height: 1.6;
-  color: #000;
-  margin: 0 auto;
-}
-
+/* cont */
 .container {
   padding: 2rem;
   background: #fff;
@@ -51,6 +70,7 @@ p {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+/* cta butt */
 .cta-buttons {
   display: flex;
   justify-content: center;
@@ -76,7 +96,7 @@ p {
   border: 1px solid #000;
 }
 
-/* NAVIGATION : oh boi */
+/* nav */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -87,7 +107,7 @@ p {
   z-index: 1000;
 }
 
-/* LANDING PAGE button */
+/* LANDING PAGE HOME BUTTON */
 .nav-left .home-btn {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
@@ -105,7 +125,7 @@ p {
   border: 1px solid #000;
 }
 
-/* ugh the rest */
+/* NAV LINKS */
 .nav-right a {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
@@ -124,7 +144,7 @@ p {
   border: 1px solid #000;
 }
 
-/* jk no container... a container is like that thing on landing page... got it */
+/* titles/ writign  */
 .page-title {
   font-family: 'Amatic SC', cursive;
   text-align: center;
@@ -142,7 +162,7 @@ p {
   color: #000;
 }
 
-/* photo board type sitch */
+/* BBoard pics */
 .bulletin-board {
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +193,7 @@ p {
   transform: scale(1.05) rotate(0deg);
 }
 
-/* video stuff if I want to pull from instagram for fieldnotes */
+/* bringing in insta */
 .instagram-window {
   display: flex;
   overflow-x: auto;
@@ -195,7 +215,8 @@ p {
   scrollbar-width: none;
 }
 
-/* Social click at botton footer no move */
+/* fix the socials boom */
+
 .social-footer-fixed {
   position: fixed;
   bottom: 10px;
